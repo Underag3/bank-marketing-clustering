@@ -69,11 +69,16 @@ Strategi marketing harus berbasis **behavior (interaksi)**, bukan hanya profil n
 1. Clone repository:
 ```bash
 git clone https://github.com/Underag3/bank-marketing-clustering.git
-Install dependencies:
+```
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 Jalankan notebook:
+2. Install dependencies:
+```bash
 jupyter notebook
-
+```
 Author
 
 Mohammad Tyas Subianto
