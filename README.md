@@ -1,19 +1,19 @@
 # Bank Marketing Customer Segmentation
 
 ## Overview
-Project ini bertujuan untuk melakukan segmentasi nasabah menggunakan teknik clustering pada dataset bank marketing. Tujuan utama adalah mengidentifikasi kelompok nasabah berdasarkan perilaku dan karakteristik untuk mendukung strategi pemasaran yang lebih efektif.
+This project aims to segment customers using clustering techniques on a bank marketing dataset. The main objective is to identify customer groups based on behavior and characteristics to support more effective marketing strategies.
 
 ---
 
 ## Dataset
-Dataset yang digunakan adalah **Bank Marketing Dataset**, yang berisi informasi demografis, finansial, dan riwayat interaksi nasabah dengan bank.
+The dataset used is the **Bank Marketing Dataset**, which contains demographic, financial, and historical information about customers' interactions with the bank.
 
 ---
 
 ## Methods
-Beberapa metode clustering yang digunakan dalam project ini:
-- K-Means dengan Gower Distance
-- K-Means dengan FAMD
+Several clustering methods used in this project:
+- K-Means with Gower Distance
+- K-Means with FAMD
 - K-Prototypes
 - K-Prototypes + FAMD (Best Model)
 
@@ -21,12 +21,12 @@ Beberapa metode clustering yang digunakan dalam project ini:
 
 ## Key Results
 
-- Metode terbaik: **K-Prototypes + FAMD**
-- Silhouette Score meningkat dari **0.186 → 0.253**
-- Jumlah cluster optimal: **3–4 cluster**
+- Best method: **K-Prototypes + FAMD**
+- Silhouette Score increased from **0.186 → 0.253**
+- Optimal number of clusters: **3–4 clusters**
 
-### Distribusi Cluster (Final Model)
-- Cluster 2: **82.3%** (mayoritas nasabah)
+### Cluster Distribution (Final Model)
+- Cluster 2: **82.3%** (majority of customers)
 - Cluster 1: **9.7%**
 - Cluster 0: **8.0%**
 
@@ -34,27 +34,27 @@ Beberapa metode clustering yang digunakan dalam project ini:
 
 ## Key Insights
 
-- Segmentasi lebih dipengaruhi oleh:
-  - **pdays (waktu sejak kontak terakhir)**
-  - **previous (jumlah kontak sebelumnya)**
-  - **age**
+- Segmentation is more influenced by:
+- **pdays (time since last contact)**
+- **previous (number of previous contacts)**
+- **age**
 
-- Faktor finansial seperti balance kurang berpengaruh
+- Financial factors such as insufficient balance influential
 
 ---
 
 ## Business Insights
 
-- **82% nasabah** belum banyak dihubungi → peluang besar untuk campaign
-- **~10% nasabah** terlalu sering dihubungi → perlu strategi baru
-- **~8% nasabah** sudah lama tidak dihubungi → cocok untuk re-engagement
+- **82% of customers** haven't been contacted much → great opportunity for campaigns
+- **~10% of customers** are contacted too often → need a new strategy
+- **~8% of customers** haven't been contacted for a long time → suitable for re-engagement
 
-👉 Kesimpulan:
-Strategi marketing harus berbasis **behavior (interaksi)**, bukan hanya profil nasabah.
+👉 Conclusion:
+Marketing strategies must be based on **behavior (interaction)**, not just customer profiles.
 
 ---
 
-## Tech Stack
+## TechStack
 - Python
 - Pandas, NumPy
 - Scikit-learn
@@ -74,7 +74,7 @@ git clone https://github.com/Underag3/bank-marketing-clustering.git
 ```bash
 pip install -r requirements.txt
 ```
-Jalankan notebook:
+Run notebook:
 2. Install dependencies:
 ```bash
 jupyter notebook
